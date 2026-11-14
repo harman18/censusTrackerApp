@@ -1,0 +1,35 @@
+# --- Android / Gradle ---
+*.iml
+.gradle/
+/local.properties
+/.idea/
+.DS_Store
+/build/
+/captures
+.externalNativeBuild
+.cxx
+local.properties
+
+# Build outputs
+app/build/
+**/build/
+*.apk
+*.aab
+*.ap_
+
+# Signing (never commit keys)
+*.jks
+*.keystore
+
+# Logs
+*.log
+
+# Android Studio / tooling
+.idea/
+.navigation/
+
+# Kotlin
+.kotlin/
+
+# Devin local config
+.devin/config.local.json

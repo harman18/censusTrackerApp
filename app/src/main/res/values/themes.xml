@@ -1,0 +1,7 @@
+<resources>
+    <style name="Theme.CensusTracker" parent="android:Theme.Material.Light.NoActionBar">
+        <item name="android:colorPrimary">@color/primary</item>
+        <item name="android:colorBackground">@color/background</item>
+        <item name="android:textColorPrimary">@color/on_surface</item>
+    </style>
+</resources>

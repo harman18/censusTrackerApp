@@ -1,0 +1,33 @@
+[versions]
+androidGradlePlugin = "8.2.0"
+kotlin = "1.9.22"
+navigationSafeArgs = "2.7.7"
+junit = "4.13.2"
+hilt = "2.50"
+[plugins]
+android-application = { id = "com.android.application", version.ref = "androidGradlePlugin" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+kotlin-kapt = { id = "org.jetbrains.kotlin.kapt", version.ref = "kotlin" }
+navigation-safe-args = { id = "androidx.navigation.safeargs", version.ref = "navigationSafeArgs" }
+hilt-android = { id = "com.google.dagger.hilt.android", version.ref = "hilt" }
+[libraries]
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version = "1.8.2" }
+androidx-compose-ui = { group = "androidx.compose.ui", name = "ui", version = "1.6.3" }
+androidx-compose-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview", version = "1.6.3" }
+androidx-compose-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling", version = "1.6.3" }
+androidx-compose-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest", version = "1.6.3" }
+androidx-material3 = { group = "androidx.compose.material3", name = "material3", version = "1.2.1" }
+androidx-material-icons-extended = { group = "androidx.compose.material", name = "material-icons-extended", version = "1.6.3" }
+androidx-hilt-navigation-compose = { group = "androidx.hilt", name = "hilt-navigation-compose", version = "1.1.0" }
+androidx-room-runtime = { group = "androidx.room", name = "room-runtime", version = "2.6.1" }
+androidx-room-ktx = { group = "androidx.room", name = "room-ktx", version = "2.6.1" }
+androidx-room-compiler = { group = "androidx.room", name = "room-compiler", version = "2.6.1" }
+androidx-room-room = { group = "androidx.room", name = "room-room", version = "2.6.1" }
+kotlinx-serialization-json = { group = "org.jetbrains.kotlinx", name = "kotlinx-serialization-json", version = "1.6.3" }
+kotlinx-coroutines-android = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-android", version = "1.7.3" }
+hilt-android = { group = "com.google.dagger", name = "hilt-android", version = "2.50" }
+hilt-android-processor = { group = "com.google.dagger", name = "hilt-compiler", version = "2.50" }
+androidx-lifecycle-viewmodel-compose = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-compose", version = "2.7.0" }
+androidx-lifecycle-runtime-compose = { group = "androidx.lifecycle", name = "lifecycle-runtime-compose", version = "2.7.0" }
+androidx-navigation-compose = { group = "androidx.navigation", name = "navigation-compose", version = "2.7.7" }
