@@ -22,18 +22,6 @@ object PermissionManager {
             isGranted = false
         ),
         PermissionItem(
-            permission = Manifest.permission.RECEIVE_SMS,
-            title = "Receive SMS",
-            description = "Allows the app to automatically receive and log respondent survey replies in the chat thread.",
-            isGranted = false
-        ),
-        PermissionItem(
-            permission = Manifest.permission.READ_SMS,
-            title = "Read SMS",
-            description = "Allows the app to verify delivered and received census message records.",
-            isGranted = false
-        ),
-        PermissionItem(
             permission = Manifest.permission.WRITE_CONTACTS,
             title = "Write Contacts",
             description = "Allows saving newly surveyed respondents directly to your device contact book for offline reference.",
