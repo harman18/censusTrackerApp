@@ -82,6 +82,8 @@ class ChatViewModel @Inject constructor(
                     presets = presetList,
                     smsEnabled = appPreferences.smsEnabled,
                     whatsappEnabled = appPreferences.whatsappEnabled,
+                    // WhatsApp-only build: never default to the disabled SMS channel
+                    selectedChannel = if (appPreferences.smsEnabled) "SMS" else "WHATSAPP",
                     isLoading = false
                 )
             }

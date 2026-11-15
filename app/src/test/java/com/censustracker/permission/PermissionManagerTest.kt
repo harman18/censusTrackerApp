@@ -9,12 +9,9 @@ class PermissionManagerTest {
     @Test
     fun testRequiredPermissionsCompleteness() {
         val permissions = PermissionManager.REQUIRED_PERMISSIONS
-        assertEquals(5, permissions.size)
+        assertEquals(2, permissions.size)
 
         val permissionNames = permissions.map { it.permission }
-        assertTrue(permissionNames.contains(android.Manifest.permission.SEND_SMS))
-        assertTrue(permissionNames.contains(android.Manifest.permission.RECEIVE_SMS))
-        assertTrue(permissionNames.contains(android.Manifest.permission.READ_SMS))
         assertTrue(permissionNames.contains(android.Manifest.permission.WRITE_CONTACTS))
         assertTrue(permissionNames.contains(android.Manifest.permission.READ_CONTACTS))
     }

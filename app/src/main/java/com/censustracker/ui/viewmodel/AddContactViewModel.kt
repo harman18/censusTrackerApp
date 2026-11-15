@@ -84,10 +84,13 @@ class AddContactViewModel @Inject constructor(
                 smsEnabled = appPreferences.smsEnabled,
                 whatsappEnabled = appPreferences.whatsappEnabled
             ).let { s ->
-                // Fall back to SMS if the remembered channel is currently disabled
-                if ((s.channel == "WHATSAPP" && !s.whatsappEnabled) ||
-                    (s.channel != "WHATSAPP" && !s.smsEnabled)
-                ) s.copy(channel = "SMS") else s
+                // Fall back to an enabled channel if the remembered one is disabled
+                val channelOk = when (s.channel) {
+                    "WHATSAPP" -> s.whatsappEnabled
+                    else -> s.smsEnabled
+                }
+                if (channelOk) s
+                else s.copy(channel = if (s.whatsappEnabled) "WHATSAPP" else "SMS")
             }
         }
         loadPresetsAndProfile()

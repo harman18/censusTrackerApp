@@ -35,7 +35,8 @@ class AppPreferences(context: Context) {
 
     /** Master kill-switch for all SMS send/receive paths. */
     var smsEnabled: Boolean
-        get() = prefs.getBoolean(KEY_SMS_ENABLED, true)
+        // WhatsApp-only build: SMS is hard-disabled regardless of the stored pref.
+        get() = false
         set(value) = prefs.edit().putBoolean(KEY_SMS_ENABLED, value).apply()
 
     /** Master kill-switch for all WhatsApp send paths. */
